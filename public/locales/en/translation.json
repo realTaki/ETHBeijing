@@ -1,46 +1,36 @@
 {
   "navbar": {
     "title": "ETH Beijing!",
-    "description": "The first Ethereum community event in China in the post-covid-19 era!"
+    "description": "Embrace Web3 AI Era. Ignite Your Ideas at ETH Beijing Hackathon"
   },
   "hero": {
-    "apply-to-hack": "Apply to hack",
-    "join-community": "Join Community"
+    "apply-to-hack": "Registration",
+    "join-community": "Join Community",
+    "match-time": "Hackathon Time",
+    "match-date": "June 5 – June 7, 2026",
+    "registration-time": "Registration Time",
+    "registration-date": "May 14 - May 24, 2026"
   },
   "intro": {
     "title": "ETH Beijing Hackathon",
-    "decs": "The first Ethereum community event in China in the post-covid-19 era!!",
+    "decs": "Embrace Web3 AI Era. Ignite Your Ideas at ETH Beijing Hackathon",
     "pku": "PKU BLOCKCHAIN",
-    "content-1": "The hackathon is hosted by <b>PKU Blockchain DAO</b> (Beijing University Blockchain Association) and <b>WTF Academy</b>, co-organized by <b>ETHPlanet</b> and <b>Scroll</b>.",
+    "content-1": "Hosted by <b>PKU Blockchain DAO</b> and <b>WTF Academy</b>, ETH Beijing hackathon invites you to explore the frontiers of Web3.",
     "wtf": "WTF ACADEMY",
-    "content-2": "With three main tracks and a total prize pool of $30,000+. As long as you have enough technical or research strength, you are welcome to participate in this event as an individual or in a team!"
+    "content-2": "With two main tracks and a prize pool of over $12,500, it's your chance to build, learn, and connect.",
+    "content-3": "Whether you're a developer, researcher, or builder, you are welcome to <b>join solo or with a team</b> to turn your ideas into reality!"
   },
   "coOrganization": {
     "title": "Co-organization"
   },
   "generousPrize": {
-    "title": "Generous Prize for 3 Tracks",
-    "prizePool": "Prize Pool",
+    "title": "AI Agent X Blockchain",
+    "prizePool": "Prize Pool 26,250 ¥",
     "cards": [
       {
-        "track": "Track 1",
-        "title": "Public Goods",
-        "description": "Build open-source projects on Ethereum"
-      },
-      {
-        "track": "Track 2",
-        "title": "Innovative Layer2 Dapp",
-        "description": "Build projects on Layer 2 that surprise"
-      },
-      {
-        "track": "Track 3",
-        "title": "Open Research",
-        "description": "Data, Policy, Security, MEV, Anti-sybil..."
-      },
-      {
-        "track": "Bounty Track",
-        "title": "Scroll",
-        "description": "Deploy smart contracts on Scroll"
+        "track": "",
+        "title": "Prize",
+        "description": ""
       }
     ]
   },
@@ -53,9 +43,9 @@
   "schedule": {
     "title": "Schedule",
     "Hackathon": "Hackathon",
-    "time-1": "Wed, Apr 5",
-    "time-2": "Thur, Apr 6 - Fri, Apr 7",
-    "time-3": "Sat, Apr 8",
+    "time-1": "Day 1",
+    "time-2": "Day 2",
+    "time-3": "Day 3",
     "open-ceremony": "Opening Ceremony",
     "schedule-1": "02:00pm",
     "topic-1": "Main Registration Opens!",
@@ -64,49 +54,53 @@
     "schedule-3": "06:00pm",
     "topic-3": "Dinner",
     "schedule-4": "08:30pm",
-    "topic-4": "Opening Cermonies",
+    "topic-4": "Opening Ceremonies",
     "schedule-5": "10:00pm",
     "topic-5": "Team Formation & Idea Brainstorming Session",
-    "tab-1-time-1": "12:00 AM",
-    "tab-1-title-1": "Check-in starts",
-    "tab-1-time-2": "06:00 PM",
-    "tab-1-title-2": "Dinner",
-    "tab-1-time-3": "07:00 PM",
-    "tab-1-title-3": "Project introduction (2 minutes for each team)",
-    "tab-1-time-4": "12:00 PM",
-    "tab-1-title-4": "Check-in ends",
 
-    "tab-2-time-1": "09:00 AM",
-    "tab-2-title-1": "Breakfast",
-    "tab-2-time-2": "12:00 AM",
-    "tab-2-title-2": "Lunch",
-    "tab-2-time-3": "01:00 PM",
-    "tab-2-title-3": "Workshop",
-    "tab-2-time-4": "06:00 PM",
-    "tab-2-title-4": "Dinner",
-    "tab-2-time-5": "07:00 PM",
-    "tab-2-title-5": "Project progress report",
+    "tab-1-time-1": "10:00",
+    "tab-1-title-1": "Main check-in opens",
+    "tab-1-time-2": "13:30",
+    "tab-1-title-2": "On-site check-in",
+    "tab-1-time-3": "14:15",
+    "tab-1-title-3": "Opening ceremony (15 minutes)",
+    "tab-1-time-4": "15:00",
+    "tab-1-title-4": "Workshop Session – BGA",
+    "tab-1-time-5": "15:30",
+    "tab-1-title-5": "Workshop Session – Tencent Hunyuan",
+    "tab-1-time-6": "16:00",
+    "tab-1-title-6": "Open networking",
+    "tab-1-time-7": "18:30",
+    "tab-1-title-7": "Team formation & ideation brainstorming session",
 
-    "tab-3-time-1": "09:00 AM",
-    "tab-3-title-1": "Breakfast",
-    "tab-3-time-2": "12:00 AM",
-    "tab-3-title-2": "Lunch",
-    "tab-3-time-3": "03:00 PM",
-    "tab-3-title-3": "Project submission & First round of judging",
-    "tab-3-time-4": "06:00 PM",
-    "tab-3-title-4": "Dinner",
-    "tab-3-time-5": "07:00 PM",
-    "tab-3-title-5": "Demo Day (5 minutes for each project in the top 5 of each track)",
-    "tab-3-time-6": "09:00 PM",
-    "tab-3-title-6": "After Party"
+    "tab-2-time-1": "14:00",
+    "tab-2-title-1": "Workshop Session – GCC",
+    "tab-2-time-2": "16:00",
+    "tab-2-title-2": "Open networking",
+    "tab-2-time-3": "20:00",
+    "tab-2-title-3": "Keynote by Vitalik (Remote)",
+    "tab-2-time-4": "21:00",
+    "tab-2-title-4": "Project progress report submission (via GitHub)",
+
+    "tab-3-time-1": "12:00",
+    "tab-3-title-1": "Final project submission deadline",
+    "tab-3-time-2": "15:00",
+    "tab-3-title-2": "Finalists announced",
+    "tab-3-time-3": "15:30",
+    "tab-3-title-3": "Finalist project demos & pitches (live)",
+    "tab-3-time-4": "18:00",
+    "tab-3-title-4": "Closing ceremony, awards & group photo",
+    "tab-3-time-5": "19:00",
+    "tab-3-title-5": "After-party dinner & networking"
   },
   "venue": {
     "title": "Venue",
-    "name": "META SPACE (Wudaokou Branch)",
-    "address": "1st floor North, Building 1, Dongshengyuan Apartment, Heqing Road, Haidian District, Beijing."
+    "name": "KUN LUN NEST",
+    "address": "Kunlun Nest, 9F, Tower A, Raycom Info Tech Park, Haidian District, Beijing, China"
   },
   "media": { "title": "Media" },
-  "university": { "title": "University & Community Support" },
+  "community": { "title": "Community" },
+  "university": { "title": "University" },
   "judgesSpeakersMentors": {},
   "Footer": {},
   "Faq": {
@@ -126,6 +120,6 @@
     "que7": "Can I start working on my project before the event?",
     "ans7": "No. In the interest of fairness, attendees should not be working on their projects before the hackathon begins and we do not allow participants to work on pre-existing projects. But you can familarize with the tools of the project.",
     "que8": "What can I build during the event?",
-    "ans8": "We provide 3 main tracks and several sponsor tracks in ETH Beijing. Each project must select 1 main track and can optionally select any sponsor tracks that fit."
+    "ans8": "We provide 1 main tracks and several sponsor tracks in ETH Beijing. Each project must select 1 main track and can optionally select any sponsor tracks that fit."
   }
 }

@@ -1,36 +1,27 @@
 ---
-import { t } from "i18next";
+import i18next from "i18next";
 
 const cardData = [
   {
-    img: "/images/sponsor1.png",
+    img: "/images/partner/1.png",
   },
-  {
-    img: "/images/partner/chainlink.png",
-  },
-  {
-    img: "/images/partner/consensys.png",
-  },
-  {
-    img: "/images/token-pocket.png",
-  },
-  {
-    img: "/images/sponsor3.png",
-  },
-  {
-    img: "/images/aspecta.png",
-  },
-  {
-    img: "/images/partner/metaspace.png",
-  },
-  {
-    img: "/images/partner/dorahacks.png",
-  },
+  // {
+  //   img: "/images/partner/2.png",
+  // },
+  // {
+  //   img: "/images/partner/3.png",
+  // },
+  // {
+  //   img: "/images/partner/4.png",
+  // },
+  // {
+  //   img: "/images/partner/dorahacks.png",
+  // },
 ];
 ---
 
 <section class="container">
-  <div id="media" class="title">{t("partner.title")}</div>
+  <div id="media" class="title">{i18next.t("partner.title")}</div>
   <div class="flex flex-wrap justify-center gap-5 mt-[60px] mb-[200px]">
     {
       cardData.map((item) => {
@@ -39,7 +30,9 @@ const cardData = [
             <div class="avatar">
               <img
                 class={`avatar_img ${
-                  item.img == "/images/token-pocket.png" ? "w-[240px]" : "w-[150px]"
+                  item.img == "/images/token-pocket.png"
+                    ? "w-[240px]"
+                    : "w-[150px]"
                 }`}
                 src={item.img}
               />

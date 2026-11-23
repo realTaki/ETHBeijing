@@ -1,30 +1,11 @@
 ---
-import { t } from "i18next";
+import i18next from "i18next";
 
-const scheduleData = [
-  [
-    { time: "tab-1-time-1", title: "tab-1-title-1" },
-    { time: "tab-1-time-2", title: "tab-1-title-2" },
-    { time: "tab-1-time-3", title: "tab-1-title-3" },
-    { time: "tab-1-time-4", title: "tab-1-title-4" },
-  ],
-  [
-    { time: "tab-2-time-1", title: "tab-2-title-1" },
-    { time: "tab-2-time-2", title: "tab-2-title-2" },
-    { time: "tab-2-time-3", title: "tab-2-title-3" },
-    { time: "tab-2-time-4", title: "tab-2-title-4" },
-    { time: "tab-2-time-5", title: "tab-2-title-5" },
-  ],
-  [
-    { time: "tab-3-time-1", title: "tab-3-title-1" },
-    { time: "tab-3-time-2", title: "tab-3-title-2" },
-    { time: "tab-3-time-3", title: "tab-3-title-3" },
-    { time: "tab-3-time-4", title: "tab-3-title-4" },
-    { time: "tab-3-time-5", title: "tab-3-title-5" },
-    { time: "tab-3-time-6", title: "tab-3-title-6" },
-    { time: "tab-3-time-7", title: "tab-3-title-7" },
-  ],
-];
+const scheduleData = {
+  tab1: 7,
+  tab2: 4,
+  tab3: 5,
+};
 ---
 
 <script>
@@ -63,7 +44,7 @@ const scheduleData = [
 <section class="flex justify-center flex-col items-center mb-[200px]">
   <div id="schedule" class="anchor"></div>
   <h1 class="font-bold text-4xl leading-[44px] h-[44px] mb-[60px]">
-    {t("schedule.title")}
+    {i18next.t("schedule.title")}
   </h1>
   <div class="pb-[40px] border relative bg-white sm:max-w-[800px] lg:w-[800px]">
     <img
@@ -73,7 +54,7 @@ const scheduleData = [
     <div class="py-[20px] px-[40px] flex max-lg:flex-wrap">
       <div class="mr-[56px] max-lg:mb-4">
         <div class="font-bold text-[20px] mb-[6px] leading-[32px]">
-          {t("schedule.Hackathon")}
+          {i18next.t("schedule.Hackathon")}
         </div>
         <div
           class="bg-gradient-to-r from-[#F833A9] to-[#FF7456] h-[3px] w-full"
@@ -89,7 +70,7 @@ const scheduleData = [
             class="flex h-full w-full px-[20px] py-[10px] rounded-[6px] items-center justify-center bg-[#fff] back hover:bg-gradient-to-r bg-gradient-to-r text-white from-[#F833A9] to-[#FF7456] hover:text-white cursor-pointer select-none"
           >
             <p class="text-[16px] leading-[19px] font-medium">
-              {t("schedule.time-1")}
+              {i18next.t("schedule.time-1")}
             </p>
           </div>
         </div>
@@ -100,7 +81,7 @@ const scheduleData = [
             class="flex h-full w-full px-[20px] py-[10px] rounded-[6px] items-center justify-center bg-[#fff] back hover:bg-gradient-to-r from-[#F833A9] to-[#FF7456] hover:text-white cursor-pointer select-none"
           >
             <p class="text-[16px] leading-[19px] font-medium">
-              {t("schedule.time-2")}
+              {i18next.t("schedule.time-2")}
             </p>
           </div>
         </div>
@@ -111,14 +92,14 @@ const scheduleData = [
             class="flex h-full w-full px-[20px] py-[10px] rounded-[6px] items-center justify-center bg-[#fff] back hover:bg-gradient-to-r from-[#F833A9] to-[#FF7456] hover:text-white cursor-pointer select-none"
           >
             <p class="text-[16px] leading-[19px] font-medium">
-              {t("schedule.time-3")}
+              {i18next.t("schedule.time-3")}
             </p>
           </div>
         </div>
       </div>
     </div>
     <div class="px-[40px] pt-[20px] border-t-[1px] border-grey-300">
-      <div class="flex items-center">
+      <!-- <div class="flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -134,186 +115,56 @@ const scheduleData = [
           ></path>
         </svg>
         <span class="text-neutral-600 text-sm leading-[17px]">
-          {t("schedule.open-ceremony")}
+          {i18next.t("schedule.open-ceremony")}
         </span>
-      </div>
+      </div> -->
       <div id="tab1" class="tabcontent" style="display: block">
-        <div
-          class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center"
-        >
-          <div
-            class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]"
-          >
-            {t("schedule.tab-1-time-1")}
-          </div>
-          <p class="text-base leading-[19px]">{t("schedule.tab-1-title-1")}</p>
-        </div>
-        <div
-          class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center"
-        >
-          <div
-            class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]"
-          >
-            {t("schedule.tab-1-time-2")}
-          </div>
-          <p class="text-base leading-[19px]">{t("schedule.tab-1-title-2")}</p>
-        </div>
-        <div
-          class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center"
-        >
-          <div
-            class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]"
-          >
-            {t("schedule.tab-1-time-3")}
-          </div>
-          <p class="text-base leading-[19px]">{t("schedule.tab-1-title-3")}</p>
-        </div>
-        <div
-          class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center"
-        >
-          <div
-            class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]"
-          >
-            {t("schedule.tab-1-time-4")}
-          </div>
-          <p class="text-base leading-[19px]">{t("schedule.tab-1-title-4")}</p>
-        </div>
+        {
+          [...Array(scheduleData.tab1)].map(function (object, i) {
+            return (
+              <div class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center">
+                <div class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]">
+                  {i18next.t(`schedule.tab-1-time-${i + 1}`)}
+                </div>
+                <p class="text-base leading-[19px]">
+                  {i18next.t(`schedule.tab-1-title-${i + 1}`)}
+                </p>
+              </div>
+            );
+          })
+        }
       </div>
       <div id="tab2" class="tabcontent">
-        <div
-          class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center"
-        >
-          <div
-            class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]"
-          >
-            {t("schedule.tab-2-time-1")}
-          </div>
-          <p class="text-base leading-[19px]">
-            {t("schedule.tab-2-title-1")}
-          </p>
-        </div>
-        <div
-          class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center"
-        >
-          <div
-            class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]"
-          >
-            {t("schedule.tab-2-time-2")}
-          </div>
-          <p class="text-base leading-[19px]">
-            {t("schedule.tab-2-title-2")}
-          </p>
-        </div>
-        <div
-          class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center"
-        >
-          <div
-            class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]"
-          >
-            {t("schedule.tab-2-time-3")}
-          </div>
-          <p class="text-base leading-[19px]">
-            {t("schedule.tab-2-title-3")}
-          </p>
-        </div>
-        <div
-          class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center"
-        >
-          <div
-            class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]"
-          >
-            {t("schedule.tab-2-time-4")}
-          </div>
-          <p class="text-base leading-[19px]">
-            {t("schedule.tab-2-title-4")}
-          </p>
-        </div>
-        <div
-          class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center"
-        >
-          <div
-            class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]"
-          >
-            {t("schedule.tab-2-time-5")}
-          </div>
-          <p class="text-base leading-[19px]">
-            {t("schedule.tab-2-title-5")}
-          </p>
-        </div>
+        {
+          [...Array(scheduleData.tab2)].map(function (object, i) {
+            return (
+              <div class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center">
+                <div class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]">
+                  {i18next.t(`schedule.tab-2-time-${i + 1}`)}
+                </div>
+                <p class="text-base leading-[19px]">
+                  {i18next.t(`schedule.tab-2-title-${i + 1}`)}
+                </p>
+              </div>
+            );
+          })
+        }
       </div>
       <div id="tab3" class="tabcontent">
-        <div
-          class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center"
-        >
-          <div
-            class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]"
-          >
-            {t("schedule.tab-3-time-1")}
-          </div>
-          <p class="text-base leading-[19px]">
-            {t("schedule.tab-3-title-1")}
-          </p>
-        </div>
-        <div
-          class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center"
-        >
-          <div
-            class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]"
-          >
-            {t("schedule.tab-3-time-2")}
-          </div>
-          <p class="text-base leading-[19px]">
-            {t("schedule.tab-3-title-2")}
-          </p>
-        </div>
-        <div
-          class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center"
-        >
-          <div
-            class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]"
-          >
-            {t("schedule.tab-3-time-3")}
-          </div>
-          <p class="text-base leading-[19px]">
-            {t("schedule.tab-3-title-3")}
-          </p>
-        </div>
-        <div
-          class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center"
-        >
-          <div
-            class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]"
-          >
-            {t("schedule.tab-3-time-4")}
-          </div>
-          <p class="text-base leading-[19px]">
-            {t("schedule.tab-3-title-4")}
-          </p>
-        </div>
-        <div
-          class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center"
-        >
-          <div
-            class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]"
-          >
-            {t("schedule.tab-3-time-5")}
-          </div>
-          <p class="text-base leading-[19px]">
-            {t("schedule.tab-3-title-5")}
-          </p>
-        </div>
-        <div
-          class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center"
-        >
-          <div
-            class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]"
-          >
-            {t("schedule.tab-3-time-6")}
-          </div>
-          <p class="text-base leading-[19px]">
-            {t("schedule.tab-3-title-6")}
-          </p>
-        </div>
+        {
+          [...Array(scheduleData.tab3)].map(function (object, i) {
+            return (
+              <div class="py-[24px] border-grey-300 border-b-[0.5px] flex items-center">
+                <div class="py-[10px] px-[40px] border-[0.5px] border-grey-300 rounded-[100px] mr-[16px]">
+                  {i18next.t(`schedule.tab-3-time-${i + 1}`)}
+                </div>
+                <p class="text-base leading-[19px]">
+                  {i18next.t(`schedule.tab-3-title-${i + 1}`)}
+                </p>
+              </div>
+            );
+          })
+        }
       </div>
     </div>
 
@@ -334,7 +185,8 @@ const scheduleData = [
   </div>
 
   <style>
-    * Style the tab */ .tab {
+    /* Style the tab */
+    .tab {
       overflow: hidden;
       border: 1px solid #ccc;
       background-color: #f1f1f1;

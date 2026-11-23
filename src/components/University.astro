@@ -1,82 +1,45 @@
 ---
-import { t } from "i18next";
+import i18next from "i18next";
 
 const cardData = [
   {
-    img: "/images/university/pku.png",
+    img: "/images/university/1.png",
   },
   {
-    img: "/images/university/qinghua.png",
+    img: "/images/university/2.png",
   },
   {
-    img: "/images/university/zhejiang.png",
+    img: "/images/university/11.png",
   },
   {
-    img: "/images/university/bhba.png",
+    img: "/images/university/6.png",
   },
   {
-    img: "/images/university/zhongcai.png",
+    img: "/images/university/7.png",
   },
   {
-    img: "/images/university/ba.png",
+    img: "/images/university/9.png",
   },
   {
-    img: "/images/university/dongbei.png",
+    img: "/images/university/5.png",
   },
   {
-    img: "/images/university/polyu.png",
-  },
-
-  {
-    img: "/images/university/fudan.png",
+    img: "/images/university/10.png",
   },
   {
-    img: "/images/university/sjtu.png",
+    img: "/images/university/3.png",
   },
   {
-    img: "/images/university/renmin.png",
+    img: "/images/university/4.png",
   },
   {
-    img: "/images/university/beiyou.png",
-  },
-
-  {
-    img: "/images/university/shenda.png",
-  },
-  {
-    img: "/images/university/0xu.png",
-  },
-  {
-    img: "/images/university/guangzhou.png",
-  },
-  {
-    img: "/images/university/cuhk.png",
-  },
-
-  {
-    img: "/images/university/zhejiangligong.png",
-  },
-
-  {
-    img: "/images/community/beida.png",
-  },
-  {
-    img: "/images/community/dapplearning.png",
-  },
-  {
-    img: "/images/community/inno.png",
-  },
-  {
-    img: "/images/community/tintin.png",
-  },
-  {
-    img: "/images/community/whaler.png",
+    img: "/images/university/8.png",
   },
 ];
 ---
 
 <section class="container">
-  <div id="media" class="title">{t("university.title")}</div>
+  <div id="media" class="title">{i18next.t("university.title")}</div>
   <div class="flex flex-wrap justify-center gap-5 mt-[60px] mb-[200px]">
     {
       cardData.map((item) => {
@@ -85,7 +48,9 @@ const cardData = [
             <div class="avatar">
               <img
                 class={`avatar_img ${
-                  item.img == "/images/token-pocket.png" ? "w-[240px]" : "w-[150px]"
+                  item.img == "/images/token-pocket.png"
+                    ? "w-[240px]"
+                    : "w-[150px]"
                 }`}
                 src={item.img}
               />

@@ -12,11 +12,12 @@ import Faq from "../../components/Faq.astro";
 import Partners from "../../components/Partners.astro";
 import Footer from "../../components/Footer.astro";
 import Media from "../../components/Media.astro";
-import i18next, { t, changeLanguage } from "i18next";
+import { ensureI18n } from "../../lib/i18n";
 import Venue from "../../components/Venue.astro";
+import Community from "../../components/Community.astro";
 import University from "../../components/University.astro";
 
-changeLanguage("zh");
+ensureI18n("zh");
 ---
 
 <Layout title="ETH Beijing">
@@ -24,19 +25,18 @@ changeLanguage("zh");
   <Hero />
   <main class="container mx-auto px-8 sm:px-0 overflow-hidden">
     <Intro />
-    <CoOrganization />
+    <!-- <CoOrganization /> -->
     <GenerousPrize />
     <Sponsors />
-    <Partners />
+    <!-- <Partners /> -->
     <Schedule />
     <Venue />
 
     <!-- <JudgesSpeakersMentors /> -->
     <Media />
+    <Community />
     <University />
     <Faq />
   </main>
   <Footer />
 </Layout>
-
-<style></style>
